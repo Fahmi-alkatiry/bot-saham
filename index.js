@@ -102,10 +102,11 @@ cron.schedule('* 9-15 * * 1-5', () => {
 });
 
 // 2. Cron: Setiap jam 09:00 pagi (Senin-Jumat) untuk rangkuman
-cron.schedule('0 9 * * 1-5', () => {
-  console.log("Mengirim laporan pagi...");
-  sendDailySummary();
-});
+// cron.schedule('0 9 * * 1-5', () => {
+//   console.log("Mengirim laporan pagi...");
+//   sendDailySummary();
+// });
+
 // 2. Cron: Setiap jam 09:00 pagi (Senin-Jumat) untuk rangkuman
 cron.schedule('0 15 * * 1-5', () => {
   console.log("Mengirim laporan pagi...");
