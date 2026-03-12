@@ -120,7 +120,7 @@ async function checkHybridSystem() {
   }
 }
 
-checkHybridSystem();
+// checkHybridSystem();
 cron.schedule("* 9-15 * * 1-5", () => checkHybridSystem());
 
 async function sendDailySummary() {
